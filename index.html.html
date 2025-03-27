@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Gym</title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+<style>
+      *{
+box-sizing: border-box;
+        }
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img.jpg.jpg');
+        /* for fitting big picture in one frame */
+        background-size: cover;
+        background-attachment: fixed;
+       
+      /* height: 100vh; */
+        color: white;
+        font-family: 'Baloo Bhai';
+        
+
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 20px;
+        left: 60px;
+        
+        
+    }
+    .left img{
+width: 136px;
+/* INVERT FUNCION: To convert white image to black or black image to black we use invert funciton*/
+/* Syntax :Filter :invert(amount)
+ invert(0)     /* No effect */
+/* invert(.6)    60% inversion */
+/* invert(100%)  Completely inverted */
+/* filter: invert(100);  */
+
+    }
+    .left div{
+        line-height: 19px;
+        text-align: center;
+        font-size:26px ;
+    }
+    .mid{
+        /* to make block in the center we have three conditions */
+        display: block;
+        width: 49%;
+        margin: 20px auto;
+        
+        /* border: 2px solid rgb(195, 255, 0) */
+        
+        
+
+    }
+    .navbar{
+
+display: inline-block;
+}
+.navbar li{
+
+display: inline-block;
+font-size: 25px;
+
+
+}
+.navbar li a{
+color: white;
+text-decoration: none;
+padding: 34px 23px;
+
+}
+.navbar li a:hover, .navbar li a.active{
+text-decoration: underline;
+color: gray;
+}
+    .right{
+        display: inline-block;
+        position: absolute;
+        top: 31px;
+        right: 15px;
+       
+        /* border: 2px solid purple; */
+
+
+
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 26px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai';
+    }
+   .btn:hover{
+    text-decoration: underline;
+    color: grey;
+   }
+   .container{
+    border: 2px solid rgba(244, 247, 244, 0.858);
+    margin:  123px 516px;
+    padding: 7px;
+    /* height: 5000px; */
+  
+    width: 25%;
+    border-radius: 41px;
+    box-sizing: border-box;
+  
+   }
+   .form-group input{
+    text-align: center;
+    /* display block is liyea kia ky center m a jye */
+    display: block;
+    width: 300px;
+    padding: 1px;
+    border: 2px solid green;
+    margin: 11px auto;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family: 'Baloo Bhai' ;
+
+   }
+   .container h1{
+    text-align: center;
+   }
+  .container button{
+    display: block;
+    width: 32%;
+    margin: 5px  auto;
+    
+   }
+</style>
+
+<body>
+
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+         <img src="f.webp" alt="">
+         <div> FitLife Gym</div>
+
+        </div>
+
+        <!-- Mid box for navbar -->
+        <div class="mid"> 
+           <ul class="navbar">
+             <li><a href="http://"  class="active">Home</a></li>
+             <li><a href="http://">About us</a></li>
+             <li><a href="http://">Fitness Calculator</a></li>
+             <li><a href="http://">Contact us</a></li>
+
+
+
+           </ul>
+
+           
+        </div>
+
+        <!-- Right box for button -->
+        <div class="div right">
+ 
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join best Gym of Narowal</h1>
+        <form action="Notaction.php">
+           <div class="form-group">
+            <input type="text" name="" placeholder="Enter you Name">
+           </div>
+           <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+           </div>
+           <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender ">
+           </div>
+           <div class="form-group">
+            <input type="text" name="" placeholder="Enter yourn Locality">
+           </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+
+</body>
+
+</html>
